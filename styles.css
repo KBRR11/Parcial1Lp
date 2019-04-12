@@ -1,0 +1,110 @@
+html{
+background: url(imagenes/fondo.jpg);
+background-size: cover;
+}
+main{
+width: 700px;
+margin: auto;
+padding: auto;
+background-color: white;
+}
+@font-face{
+  font-family: 'great';
+  src: url(fonts/GreatVibes-Regular.ttf)
+}
+@font-face{
+  font-family: 'bad';
+  src: url(fonts/BadScript-Regular.ttf)
+}
+#titulo{
+font-size: 50px;
+margin: auto;
+font-family: 'great';
+color: #0F85DA;
+
+
+}
+label#inicio{
+font-size: 40px;
+color: red;
+font-family: 'great';
+padding-left: 150px;
+
+
+}
+label#labelventas{
+font-size: 20px;
+color: blue;
+}
+label#labelreportes{
+}
+label#labelclientes{
+  font-family: 'great';
+  color: #0F85DA;
+  font-size: 45px;
+}
+label#labelproductos{
+}
+img{
+float: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0F85DA;
+  margin-top: 90px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'bad';
+}
+
+li a:hover {
+  background-color: #4FB4FC;
+}
+#ventas{
+  width: 700px;
+  height: 600px;
+}
+#inicio{
+  width: 700px;
+  height: 600px;
+}
+#reportes{
+  width: 700px;
+  height: 600px;
+}
+#productos{
+  width: 700px;
+  height: 600px;
+}
+#clientes{
+  width: 700px;
+  height: 600px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
