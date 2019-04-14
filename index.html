@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>untitled</title>
+<title>Examen Ramirez</title>
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <script src="script.js" type="text/javascript"></script>
@@ -25,11 +25,37 @@
 			</ul>
 			<label id="inicio">Bienvenido al Sistema</label>
 			<div style="display:none" id="ventas">
-				<label id="labelventas">Ventas</label>
-				
+			<label id="labelventas">Ventas</label>
+				<hr />
+				<label id="ventacli">Cliente </label>
+				<input type="text" placeholder="Cliente..." id="cajacliente" />
+				<button onclick="clientes()" class="fas fa-search"></button>
+				<br />
+				<button onclick="productos()"  class="fas fa-shopping-cart">Producto</button>
+				<br />
+				<input type="text" placeholder="Producto..." id="cajaproducto"/>
+				<input type="text" placeholder="Precio..." id="cajaprecio"/>
+				<input type="text" placeholder="Cantidad..." id="cajacantidad"/>
+				<br />
+				<label class="validacion-error hide" id="ProductoValidationError"></label>	
+				<input onclick="reportes(), onFormSubmit()" type="button" value="Enviar"/>
 			</div>
 			<div id="reportes" style="display:none">
 				<label id="labelreportes">Reportes</label>
+				<table class="list" id="employeeList"> 
+						<tr>
+							<th>Venta</th>
+							<th>Producto</th>
+							<th>Precio</th>
+							<th>Cantidad</th>
+							<th>Subtotal</th>
+							<th>Acción</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+			</table>
 			</div>
 			<div id="clientes" style="display:none">
 				<label id="labelclientes" >Clientes</label>
@@ -46,34 +72,72 @@
 					  <td>David</td>
 					  <td>Reyna</td>
 					  <td>33261202</td>
-					  <td><i class="fas fa-user-plus" onclick="ventas()"></i></td>
+					  <td><i class="fas fa-user-plus" onclick="ventas(), data1()"  id="addcli"></i></td>
 					</tr>
 					<tr>
 						<td>C002</td>
 						<td>Keyla</td>
 						<td>De La Cruz</td>
 						<td>38434838</td>
-						<td><i class="fas fa-user-plus"  onclick="ventas()"></i></td>
+						<td><i class="fas fa-user-plus"  onclick="ventas(), data2()" id="addcli"></i></td>
 					  </tr>
 					  <tr>
 						<td>C003</td>
 						<td>Ronaldo</td>
 						<td>Jimanez</td>
 						<td>4393473</td>
-						<td><i class="fas fa-user-plus" onclick="ventas()"></i></td>
+						<td><i class="fas fa-user-plus" onclick="ventas(), data3()" id="addcli"></i></td>
 					  </tr>
 					  <tr>
 						<td>C004</td>
 						<td>Lucas</td>
 						<td>Ayala</td>
 						<td>43942934</td>
-						<td><i class="fas fa-user-plus"  onclick="ventas()"></i></td>
+						<td><i class="fas fa-user-plus"  onclick="ventas(), data4()" id="addcli"></i></td>
 					  </tr>
 					
 				</table>
 			</div>
 			<div id="productos" style="display:none">
 				<label id="labelproductos" >Productos</label>
+				<table>
+					<tr>
+						<th>Codigo</th>
+					  <th>Producto</th>
+					  <th>Precio</th>
+					  <th>Cantidad</th>
+					  <th>Acción</th>
+					</tr>
+					<tr>
+					  <td>P001</td>
+					  <td>Mouse</td>
+					  <td>25</td>
+					  <td>20</td>
+					  <td><i class="fas fa-shopping-cart" onclick="ventas(), datopro1()" id="carrito"></i></td>
+					</tr>
+					<tr>
+						<td>P002</td>
+						<td>Teclado</td>
+						<td>50</td>
+						<td>30</td>
+						<td><i class="fas fa-shopping-cart"  onclick="ventas(), datopro2()" id="carrito"></i></td>
+					  </tr>
+					  <tr>
+						<td>P003</td>
+						<td>Parlantes</td>
+						<td>200</td>
+						<td>20</td>
+						<td><i class="fas fa-shopping-cart" onclick="ventas(), datopro3()" id="carrito"></i></td>
+					  </tr>
+					  <tr>
+						<td>P004</td>
+						<td>Impresora</td>
+						<td>700</td>
+						<td>20</td>
+						<td><i class="fas fa-shopping-cart"  onclick="ventas(), datopro4()" id="carrito"></i></td>
+					  </tr>
+					
+				</table>
 			</div>
 		</main>
 	</main>

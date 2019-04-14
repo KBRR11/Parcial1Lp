@@ -28,22 +28,38 @@ label#inicio{
 font-size: 40px;
 color: red;
 font-family: 'great';
-padding-left: 150px;
+padding-left: 170px;
+margin-top: 250px;
 
 
 }
-label#labelventas{
-font-size: 20px;
-color: blue;
+#labelventas{
+  font-family: 'great';
+  color: #0F85DA;
+  font-size: 45px;
+  
 }
-label#labelreportes{
+
+#ventacli{
+  font-family: 'great';
+  color: black;
+  font-size:25px; 
 }
-label#labelclientes{
+#labelreportes{
   font-family: 'great';
   color: #0F85DA;
   font-size: 45px;
 }
-label#labelproductos{
+#labelclientes{
+  font-family: 'great';
+  color: #0F85DA;
+  font-size: 45px;
+}
+#labelproductos{
+  font-family: 'great';
+  color: #0F85DA;
+  font-size: 45px;
+
 }
 img{
 float: left;
@@ -79,7 +95,7 @@ li a:hover {
 }
 #inicio{
   width: 700px;
-  height: 600px;
+  height: 350px;
 }
 #reportes{
   width: 700px;
@@ -97,6 +113,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  
 }
 
 td, th {
@@ -107,4 +124,21 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+#addcli{
+  color: #0F85DA;
+}
+#carrito{
+  color: rgb(110, 212, 14);
+}
+input{
+  padding-top: 8px;
+  margin-top:  11px;
+}
+button{
+  padding-top: 8px;
+ 
+}
+#deleterow{
+  color: rgb(216, 68, 30);
 }
